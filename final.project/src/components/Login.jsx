@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import styles from './Login.module.css';
 import { useAuth } from '../context/loginContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -44,22 +43,22 @@ const Login = () => {
 
 
   return (
-    <div className={styles.container}>
+    <div>
       <h2>Bejelentkezés</h2>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form onSubmit={handleSubmit} >
         <input
           type="text"
           placeholder="Felhasználónév"
           ref={usernameRef}
-          className={styles.input}
+          
         />
         <input
           type="password"
           placeholder="Jelszó"
-          className={styles.input}
+          
           ref={passwordRef}
         />
-        <button type="submit" className={styles.button}>Belépés</button>
+        <button type="submit" >Belépés</button>
       </form>
     </div>
   );
