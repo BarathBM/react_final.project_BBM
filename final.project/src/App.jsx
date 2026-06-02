@@ -49,7 +49,7 @@ function App() {
             <Route path='/' element={<WebshopList items={ItemData} deleteItem={deleteItem} />}/>
             <Route path='form' element={<ProtectedRoute><WebshopForm SendDataToApp={handleItemData}></WebshopForm></ProtectedRoute>}></Route>
             <Route path='login' element={<Login/>}></Route>
-            
+            <Route path='details/:id' element={<Details/>}></Route>
           </Routes>
       </AuthProvider>
     </>

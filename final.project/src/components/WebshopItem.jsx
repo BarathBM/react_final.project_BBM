@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import Swal from "sweetalert2";
 import Card from "../wrappers/Card";
 import { useAuth } from "../context/loginContext";
